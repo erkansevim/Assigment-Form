@@ -13,7 +13,7 @@
         <fieldset>
           <legend>Sözlesme Onay</legend>
           <input type="checkbox" name="Onaylandi" id="" />
-          <p>Asagidaki bilgilerin dogrulugunu ve sözlesmeyi onaliyorum.</p>
+          <span>Asagidaki bilgilerin dogrulugunu ve sözlesmeyi onaliyorum.</span><br>
           <button type="submit" class="btn btn-primary">Formu Kaydet</button>
           <button type="reset" class="btn btn-primary">Formu Temizle</button>
         </fieldset>
@@ -23,9 +23,66 @@
         <fieldset>
             <legend>Kisisel Bilgiler</legend>
             <label for="Id">Form Güvenlik ID</label>
-            <input type="text" name="Guvenlik ID" id="Id" placeholder="asdfgh"><br>
-            
+            <input type="text" name="Guvenlik ID" id="Id" placeholder="asdfgh" style="margin-bottom: 5px"><br>
+            <label for="Ad">Ad</label>
+            <input type="text" name="Adi" id="Ad" style="margin-left: 100px; margin-bottom: 5px;"><br>
+            <label for="Soyad">Soyad</label>
+            <input type="text" name="Soyadi" id="Soyad" style="margin-left: 79px; margin-bottom: 5px;" ><br>
+            <label for="Yas">Yas</label>
+            <input type="number" name="Yasi" id="Yas" style="margin-left: 96px; margin-bottom: 5px" min="18"><br>
+            <label for="Mail">Mail Adresi</label>
+            <input type="email" name="Mail-adresi" id="Mail" style="margin-left: 43px; margin-bottom: 5px"><br>
+            <label for="">Fotograf Ekle</label>
+            <input type="file" name="" id="" style="margin-left: 31px;">
+
         </fieldset>
+      </div>
+
+      <div>
+        <fieldset>
+            <legend>Diger Bilgiler</legend>
+            <table>
+                <th>Buradaki alanlar Mesleki Deneyimi Kapsar</th>
+                <tr>
+                    <td>Sektöre Giris Tarihi</td>
+                    <td><input type="date" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Sektör Deneyimi</td>
+                    <td>
+                        <input type="radio"> 
+                        <label for="">1-5 Yil</label><br>
+                        <input type="radio"> 
+                        <label for="">6-10 Yil</label> <br>
+                        <input type="radio"> 
+                        <label for="">11-15 Yil</label> <br>
+                        <input type="radio"> 
+                        <label for="">15-Üzeri Yil</label> <br>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Programlama Dilleri</td>
+                    <td>
+                        <select name="ProgramlamaDilleri" id="" multiple>
+                            <option value="">C#</option>
+                            <option value="">PHP</option>
+                            <option value="">Java</option>
+                            <option value="">Go</option>
+                            <option value="">C</option>
+                            <option value="">C++</option>
+                            <option value="">JS</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+        <legend>Sözlesme Kopyasi</legend>
+        
+         </fieldset>
       </div>
     </form>
   </body>
